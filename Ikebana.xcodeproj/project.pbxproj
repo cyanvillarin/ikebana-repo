@@ -8,9 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		0FCDFD823E2AB6F64CD911F3 /* Pods_Ikebana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F0E05564522A904AE35919 /* Pods_Ikebana.framework */; };
+		87787AD227A0C78C004CE508 /* OthersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87787AD127A0C78C004CE508 /* OthersViewController.swift */; };
+		87787AD427A0C79D004CE508 /* MaterialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87787AD327A0C79D004CE508 /* MaterialsViewController.swift */; };
+		87787AD627A0C7D7004CE508 /* StylesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87787AD527A0C7D7004CE508 /* StylesViewModel.swift */; };
+		87787AD827A0C7E2004CE508 /* MaterialsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87787AD727A0C7E2004CE508 /* MaterialsViewModel.swift */; };
+		87787ADA27A0C7EB004CE508 /* OthersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87787AD927A0C7EB004CE508 /* OthersViewModel.swift */; };
+		87787ADC27A0C89E004CE508 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87787ADB27A0C89E004CE508 /* CustomTabBarController.swift */; };
+		87787ADE27A0C8DC004CE508 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87787ADD27A0C8DC004CE508 /* BaseViewController.swift */; };
+		87787AE127A0CA8B004CE508 /* MaterialsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87787ADF27A0CA8B004CE508 /* MaterialsTableViewCell.swift */; };
+		87787AE227A0CA8B004CE508 /* MaterialsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87787AE027A0CA8B004CE508 /* MaterialsTableViewCell.xib */; };
+		87787AE427A0CD26004CE508 /* BirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87787AE327A0CD26004CE508 /* BirthdayViewController.swift */; };
+		87787AE627A0D598004CE508 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87787AE527A0D598004CE508 /* Material.swift */; };
+		87787AE827A0D5C9004CE508 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87787AE727A0D5C9004CE508 /* Style.swift */; };
 		87BB808327A01C7F00BA4514 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BB808227A01C7F00BA4514 /* AppDelegate.swift */; };
 		87BB808527A01C7F00BA4514 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BB808427A01C7F00BA4514 /* SceneDelegate.swift */; };
-		87BB808727A01C7F00BA4514 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BB808627A01C7F00BA4514 /* ViewController.swift */; };
+		87BB808727A01C7F00BA4514 /* StylesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BB808627A01C7F00BA4514 /* StylesViewController.swift */; };
 		87BB808A27A01C7F00BA4514 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87BB808827A01C7F00BA4514 /* Main.storyboard */; };
 		87BB808C27A01C8200BA4514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87BB808B27A01C8200BA4514 /* Assets.xcassets */; };
 		87BB808F27A01C8200BA4514 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87BB808D27A01C8200BA4514 /* LaunchScreen.storyboard */; };
@@ -18,10 +30,22 @@
 
 /* Begin PBXFileReference section */
 		8386B0BDFF1E1F3359FFD44C /* Pods-Ikebana.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ikebana.debug.xcconfig"; path = "Target Support Files/Pods-Ikebana/Pods-Ikebana.debug.xcconfig"; sourceTree = "<group>"; };
+		87787AD127A0C78C004CE508 /* OthersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersViewController.swift; sourceTree = "<group>"; };
+		87787AD327A0C79D004CE508 /* MaterialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsViewController.swift; sourceTree = "<group>"; };
+		87787AD527A0C7D7004CE508 /* StylesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylesViewModel.swift; sourceTree = "<group>"; };
+		87787AD727A0C7E2004CE508 /* MaterialsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsViewModel.swift; sourceTree = "<group>"; };
+		87787AD927A0C7EB004CE508 /* OthersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersViewModel.swift; sourceTree = "<group>"; };
+		87787ADB27A0C89E004CE508 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		87787ADD27A0C8DC004CE508 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		87787ADF27A0CA8B004CE508 /* MaterialsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsTableViewCell.swift; sourceTree = "<group>"; };
+		87787AE027A0CA8B004CE508 /* MaterialsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaterialsTableViewCell.xib; sourceTree = "<group>"; };
+		87787AE327A0CD26004CE508 /* BirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayViewController.swift; sourceTree = "<group>"; };
+		87787AE527A0D598004CE508 /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
+		87787AE727A0D5C9004CE508 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		87BB807F27A01C7F00BA4514 /* Ikebana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ikebana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87BB808227A01C7F00BA4514 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87BB808427A01C7F00BA4514 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		87BB808627A01C7F00BA4514 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		87BB808627A01C7F00BA4514 /* StylesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylesViewController.swift; sourceTree = "<group>"; };
 		87BB808927A01C7F00BA4514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87BB808B27A01C8200BA4514 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87BB808E27A01C8200BA4514 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +66,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87787ACD27A0C75B004CE508 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				87787AE727A0D5C9004CE508 /* Style.swift */,
+				87BB808627A01C7F00BA4514 /* StylesViewController.swift */,
+				87787AD527A0C7D7004CE508 /* StylesViewModel.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		87787ACE27A0C767004CE508 /* Materials */ = {
+			isa = PBXGroup;
+			children = (
+				87787AE527A0D598004CE508 /* Material.swift */,
+				87787AD327A0C79D004CE508 /* MaterialsViewController.swift */,
+				87787ADF27A0CA8B004CE508 /* MaterialsTableViewCell.swift */,
+				87787AE027A0CA8B004CE508 /* MaterialsTableViewCell.xib */,
+				87787AD727A0C7E2004CE508 /* MaterialsViewModel.swift */,
+			);
+			path = Materials;
+			sourceTree = "<group>";
+		};
+		87787ACF27A0C777004CE508 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				87787AD127A0C78C004CE508 /* OthersViewController.swift */,
+				87787AD927A0C7EB004CE508 /* OthersViewModel.swift */,
+				87787AE327A0CD26004CE508 /* BirthdayViewController.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		87787AD027A0C77D004CE508 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				87787ADB27A0C89E004CE508 /* CustomTabBarController.swift */,
+				87787ADD27A0C8DC004CE508 /* BaseViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		87BB807627A01C7F00BA4514 = {
 			isa = PBXGroup;
 			children = (
@@ -63,9 +128,12 @@
 		87BB808127A01C7F00BA4514 /* Ikebana */ = {
 			isa = PBXGroup;
 			children = (
+				87787ACD27A0C75B004CE508 /* Styles */,
+				87787ACE27A0C767004CE508 /* Materials */,
+				87787ACF27A0C777004CE508 /* Others */,
+				87787AD027A0C77D004CE508 /* Common */,
 				87BB808227A01C7F00BA4514 /* AppDelegate.swift */,
 				87BB808427A01C7F00BA4514 /* SceneDelegate.swift */,
-				87BB808627A01C7F00BA4514 /* ViewController.swift */,
 				87BB808827A01C7F00BA4514 /* Main.storyboard */,
 				87BB808B27A01C8200BA4514 /* Assets.xcassets */,
 				87BB808D27A01C8200BA4514 /* LaunchScreen.storyboard */,
@@ -80,7 +148,6 @@
 				8386B0BDFF1E1F3359FFD44C /* Pods-Ikebana.debug.xcconfig */,
 				C46632946D439FD19F3004EE /* Pods-Ikebana.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -152,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87787AE227A0CA8B004CE508 /* MaterialsTableViewCell.xib in Resources */,
 				87BB808F27A01C8200BA4514 /* LaunchScreen.storyboard in Resources */,
 				87BB808C27A01C8200BA4514 /* Assets.xcassets in Resources */,
 				87BB808A27A01C7F00BA4514 /* Main.storyboard in Resources */,
@@ -207,9 +275,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87BB808727A01C7F00BA4514 /* ViewController.swift in Sources */,
+				87787AE627A0D598004CE508 /* Material.swift in Sources */,
+				87BB808727A01C7F00BA4514 /* StylesViewController.swift in Sources */,
+				87787ADA27A0C7EB004CE508 /* OthersViewModel.swift in Sources */,
+				87787AD827A0C7E2004CE508 /* MaterialsViewModel.swift in Sources */,
+				87787AD427A0C79D004CE508 /* MaterialsViewController.swift in Sources */,
+				87787AE827A0D5C9004CE508 /* Style.swift in Sources */,
+				87787AD627A0C7D7004CE508 /* StylesViewModel.swift in Sources */,
+				87787AE427A0CD26004CE508 /* BirthdayViewController.swift in Sources */,
+				87787AE127A0CA8B004CE508 /* MaterialsTableViewCell.swift in Sources */,
+				87787AD227A0C78C004CE508 /* OthersViewController.swift in Sources */,
 				87BB808327A01C7F00BA4514 /* AppDelegate.swift in Sources */,
+				87787ADE27A0C8DC004CE508 /* BaseViewController.swift in Sources */,
 				87BB808527A01C7F00BA4514 /* SceneDelegate.swift in Sources */,
+				87787ADC27A0C89E004CE508 /* CustomTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
