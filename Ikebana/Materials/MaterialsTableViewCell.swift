@@ -23,6 +23,11 @@ class MaterialsTableViewCell: UITableViewCell {
       super.setSelected(selected, animated: animated)
    }
    
+   override func prepareForReuse() {
+      super.prepareForReuse()
+      materialImageView.image = nil
+   }
+   
    func setup(material: Material) {
       if let imageName = material.imageName {
          if let image = UIImage(named: imageName) {

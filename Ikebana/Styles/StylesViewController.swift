@@ -47,13 +47,14 @@ extension StylesViewController: CircularCarouselDataSource {
       var view = view
       
       if view == nil {
-         view = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
+         view = UIView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
          
          let imageView = UIImageView()
-         imageView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
+         imageView.frame = CGRect(x: 0, y: 0, width: 300, height: 300)
          if let imageName = styles[indexPath.row].imageName {
             if let image = UIImage(named: imageName) {
                imageView.image = image
+               imageView.contentMode = .scaleAspectFill
             }
          }
          view?.addSubview(imageView)

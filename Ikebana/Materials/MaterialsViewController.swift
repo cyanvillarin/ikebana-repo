@@ -68,7 +68,9 @@ extension MaterialsViewController: UITableViewDelegate {
 extension MaterialsViewController: UITableViewDataSource {
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       let cell = tableView.dequeueReusableCell(withIdentifier: "MaterialsTableViewCell", for: indexPath) as! MaterialsTableViewCell
-      cell.setup(material: materials[indexPath.row])
+      DispatchQueue.main.async {
+         cell.setup(material: self.materials[indexPath.row])
+      }
       return cell
    }
    
