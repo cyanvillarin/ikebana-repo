@@ -14,7 +14,7 @@ class StylesViewController: BaseViewController {
    
    let styles: [Style] = [
       Style(name: "Rikka 立花", imageName: "rikka"),
-      Style(name: "Seika 製菓", imageName: "seika"),
+      Style(name: "Seika 活花", imageName: "seika"),
       Style(name: "Moribana 盛花", imageName: "moribana"),
       Style(name: "Contemporary Ikebana 現代生花", imageName: "contemporary-ikebana")
    ]
