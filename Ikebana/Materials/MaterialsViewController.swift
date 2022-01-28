@@ -18,9 +18,9 @@ class MaterialsViewController: BaseViewController {
    let materials: [Material] = [
       Material(japaneseName: "Take 竹", englishName: "Bamboo", imageName: "take"),
       Material(japaneseName: "Sasa 笹", englishName: "Bamboo Grass", imageName: "sasa"),
-      Material(japaneseName: "Nishikigika ニシキギ科", englishName: "Bittersweet", imageName: "tsuruumemodoki"),
+      Material(japaneseName: "Tsuru Ume Modoki 鶴梅擬", englishName: "Bittersweet", imageName: "tsuruumemodoki"),
       Material(japaneseName: "Tsubaki 椿", englishName: "Camellia", imageName: "tsubaki"),
-      Material(japaneseName: "Senryo 千両", englishName: "Chloranthemum", imageName: "senryo"),
+      Material(japaneseName: "Senryo 千両", englishName: "Ardisia", imageName: "senryo"),
       Material(japaneseName: "Kiku 菊", englishName: "Chrysamthemum", imageName: "kiku"),
       Material(japaneseName: "Shaga 著莪", englishName: "Iris", imageName: "shobu"),
       Material(japaneseName: "Mikan みかん", englishName: "Orang", imageName: "mikan"),
