@@ -6,12 +6,12 @@ target 'Ikebana' do
   use_frameworks!
 
   # Pods for Ikebana
-  pod 'Alamofire'			# for networking
-  pod 'RxSwift'				# for data binding viewModel
-  pod 'RxCocoa'				# for data binding view
-  pod 'Kingfisher'			# for image caching, loading
-  pod 'PKHUD'				# for loading views
-  pod 'CircularCarousel'	# for the carousel
-  pod 'SAConfettiView'		# for the confetti view
+  pod 'Alamofire'			           # for networking
+  pod 'RxSwift'				           # for data binding viewModel
+  pod 'RxCocoa'				           # for data binding view
+  pod 'Kingfisher'			         # for image caching, loading
+  pod 'PKHUD'				             # for loading views
+  pod 'CircularCarousel'	       # for the carousel
+  pod 'ConfettiView-NSHipster'   # for the confetti view
 
 end

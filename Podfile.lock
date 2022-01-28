@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (5.4.4)
   - CircularCarousel (1.0.0)
+  - ConfettiView-NSHipster (0.3.1)
   - Kingfisher (7.1.2)
   - PKHUD (5.3.0)
   - RxCocoa (6.2.0):
@@ -9,38 +10,37 @@ PODS:
   - RxRelay (6.2.0):
     - RxSwift (= 6.2.0)
   - RxSwift (6.2.0)
-  - SAConfettiView (0.1.8)
 
 DEPENDENCIES:
   - Alamofire
   - CircularCarousel
+  - ConfettiView-NSHipster
   - Kingfisher
   - PKHUD
   - RxCocoa
   - RxSwift
-  - SAConfettiView
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - CircularCarousel
+    - ConfettiView-NSHipster
     - Kingfisher
     - PKHUD
     - RxCocoa
     - RxRelay
     - RxSwift
-    - SAConfettiView
 
 SPEC CHECKSUMS:
   Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
   CircularCarousel: 6248f5892c018fc2d115d4d5186be91d46bacbea
+  ConfettiView-NSHipster: dd3f241dc342250ee37e0fc07e6d1adb6695eb0b
   Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
   PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
-  SAConfettiView: c87031a2280659261b730fce3669fb10e73636ee
 
-PODFILE CHECKSUM: 983b0853e6f59a12255513906bcc273128849023
+PODFILE CHECKSUM: 439b12edd2f76274c55753a6c7be7ec625544b4c
 
 COCOAPODS: 1.11.2

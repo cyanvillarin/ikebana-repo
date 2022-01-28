@@ -205,8 +205,8 @@
                         <viewLayoutGuide key="safeArea" id="MgB-ae-BgM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ZS8-pR-kBu" firstAttribute="centerY" secondItem="Qca-cR-VrH" secondAttribute="centerY" id="EEX-Ar-qZe"/>
-                            <constraint firstItem="ZS8-pR-kBu" firstAttribute="centerX" secondItem="Qca-cR-VrH" secondAttribute="centerX" id="Zaj-EE-egy"/>
+                            <constraint firstItem="ZS8-pR-kBu" firstAttribute="centerY" secondItem="Qca-cR-VrH" secondAttribute="centerY" id="Gg5-Gg-zxX"/>
+                            <constraint firstItem="ZS8-pR-kBu" firstAttribute="centerX" secondItem="Qca-cR-VrH" secondAttribute="centerX" id="s8V-XX-cB2"/>
                         </constraints>
                     </view>
                 </viewController>

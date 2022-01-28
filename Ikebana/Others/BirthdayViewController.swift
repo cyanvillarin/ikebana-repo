@@ -7,15 +7,23 @@
 
 import Foundation
 import UIKit
-import SAConfettiView
-
+import ConfettiView
 class BirthdayViewController: BaseViewController {
    
    override func viewDidLoad() {
       super.viewDidLoad()
       
-      let confettiView = SAConfettiView(frame: self.view.bounds)
+      let confettiView = ConfettiView()
       self.view.addSubview(confettiView)
+      confettiView.emit(with: [
+        .text("❤️"),
+        .text("🌸"),
+        .shape(.circle, .purple),
+        .shape(.triangle, .cyan)
+      ]) { _ in
+        // Optional completion handler fires when animation finishes.
+      }
+      
    }
    
 }
