@@ -12,5 +12,6 @@ target 'Ikebana' do
   pod 'Kingfisher'			# for image caching, loading
   pod 'PKHUD'				# for loading views
   pod 'CircularCarousel'	# for the carousel
+  pod 'SAConfettiView'		# for the confetti view
 
 end
