@@ -31,9 +31,12 @@ class StylesViewController: BaseViewController {
       }
    }
    
+   @IBOutlet var backgroundImage: UIImageView!
+   @IBOutlet var styleNameLabel: UILabel!
+   
    override func viewDidLoad() {
       super.viewDidLoad()
-      // Do any additional setup after loading the view.
+      backgroundImage.applyBlurEffect()
    }
    
 }
@@ -47,14 +50,15 @@ extension StylesViewController: CircularCarouselDataSource {
       var view = view
       
       if view == nil {
-         view = UIView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
-         
+         view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 300))
+         view?.backgroundColor = .clear
          let imageView = UIImageView()
-         imageView.frame = CGRect(x: 0, y: 0, width: 300, height: 300)
+         imageView.frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 300)
          if let imageName = styles[indexPath.row].imageName {
             if let image = UIImage(named: imageName) {
                imageView.image = image
-               imageView.contentMode = .scaleAspectFill
+               imageView.clipsToBounds = true
+               imageView.backgroundColor = .clear
             }
          }
          view?.addSubview(imageView)
@@ -93,7 +97,15 @@ extension StylesViewController: CircularCarouselDelegate {
       /* Handle selection of the selected carousel item */
    }
    func carousel(_ carousel: CircularCarousel, willBeginScrollingToIndex index: Int) {
-      
+      if let imageName = styles[index].imageName {
+         if let image = UIImage(named: imageName) {
+            backgroundImage.image = image
+            backgroundImage.contentMode = .scaleAspectFill
+         }
+      }
+      if let styleLabel = styleNameLabel {
+         styleLabel.text = styles[index].name
+      }
    }
    func carousel(_ carousel: CircularCarousel, spacingForOffset offset: CGFloat) -> CGFloat {
       return 10.0

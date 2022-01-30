@@ -16,30 +16,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1db-CK-rVA">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="giY-Xj-uYy" customClass="CircularCarousel" customModule="CircularCarousel">
-                                <rect key="frame" x="0.0" y="228.5" width="414" height="439"/>
+                                <rect key="frame" x="0.0" y="298" width="414" height="300"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="439" id="KAf-lD-KfL"/>
+                                    <constraint firstAttribute="height" constant="300" id="ldQ-7P-ygp"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="va0-wP-Med">
+                                <rect key="frame" x="19" y="623" width="376" height="26"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Rikka ">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="Herculanum"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="立花">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="HiraMinProN-W3"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="giY-Xj-uYy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0aH-CY-4cN"/>
-                            <constraint firstItem="giY-Xj-uYy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RRz-ZV-O2L"/>
+                            <constraint firstItem="va0-wP-Med" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="19" id="2X2-eP-cKG"/>
+                            <constraint firstItem="va0-wP-Med" firstAttribute="top" secondItem="giY-Xj-uYy" secondAttribute="bottom" constant="25" id="AGa-97-YLB"/>
+                            <constraint firstItem="1db-CK-rVA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ce8-K6-13t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1db-CK-rVA" secondAttribute="trailing" id="EcX-gU-ebn"/>
                             <constraint firstItem="giY-Xj-uYy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VQh-cv-TQd"/>
+                            <constraint firstItem="giY-Xj-uYy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cFn-Nw-MOB"/>
+                            <constraint firstItem="giY-Xj-uYy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iTO-D8-77l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1db-CK-rVA" secondAttribute="bottom" id="irx-uO-C0c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="va0-wP-Med" secondAttribute="trailing" constant="19" id="ryS-dH-8z3"/>
+                            <constraint firstItem="1db-CK-rVA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="toU-QX-w9W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="giY-Xj-uYy" secondAttribute="trailing" id="wDw-HZ-b4H"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ujm-P3-f4V"/>
+                    <navigationItem key="navigationItem" title="Styles" id="ujm-P3-f4V"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="1db-CK-rVA" id="LAs-Qu-YUc"/>
                         <outlet property="carousel" destination="giY-Xj-uYy" id="hh9-Rb-gsy"/>
+                        <outlet property="styleNameLabel" destination="va0-wP-Med" id="zWQ-M8-3Qa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-807" y="901"/>
+            <point key="canvasLocation" x="-807.24637681159425" y="900.66964285714278"/>
         </scene>
         <!--Materials-->
         <scene sceneID="lBM-sz-F6a">
@@ -82,7 +113,7 @@
                             <constraint firstItem="dSk-VG-LdS" firstAttribute="top" secondItem="Kc8-6A-41O" secondAttribute="top" id="xh5-vn-KMc"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Materials" id="Tbg-ba-irb"/>
+                    <tabBarItem key="tabBarItem" title="Materials" image="leaf" catalog="system" selectedImage="leaf.fill" id="Tbg-ba-irb"/>
                     <connections>
                         <outlet property="tableView" destination="Swf-s7-Ns1" id="0o0-Nk-L4U"/>
                     </connections>
@@ -95,7 +126,7 @@
         <scene sceneID="wPX-Ev-bSJ">
             <objects>
                 <navigationController id="fx3-M0-DcT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Styles" id="DgD-E0-5br"/>
+                    <tabBarItem key="tabBarItem" title="Styles" image="circle.grid.hex" catalog="system" selectedImage="circle.hexagongrid.fill" id="DgD-E0-5br"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="W5U-zB-WOW">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -112,7 +143,7 @@
         <scene sceneID="kil-Sy-6cs">
             <objects>
                 <navigationController id="cZw-Ok-z2s" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Others" id="pum-1S-7s1"/>
+                    <tabBarItem key="tabBarItem" title="Others" image="point.3.connected.trianglepath.dotted" catalog="system" selectedImage="point.3.filled.connected.trianglepath.dotted" id="pum-1S-7s1"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cj7-AW-hZJ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -247,6 +278,9 @@
                             <constraint firstItem="gap-Jw-La2" firstAttribute="top" secondItem="dVm-gu-KpX" secondAttribute="bottom" constant="30" id="ocL-BM-i5D"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="logoImageView" destination="dVm-gu-KpX" id="iOb-IO-ez3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qPq-LM-avl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -284,7 +318,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="circle.grid.hex" catalog="system" width="128" height="112"/>
+        <image name="circle.hexagongrid.fill" catalog="system" width="128" height="112"/>
         <image name="ikebana-logo" width="1024" height="1024"/>
+        <image name="leaf" catalog="system" width="128" height="109"/>
+        <image name="leaf.fill" catalog="system" width="128" height="106"/>
+        <image name="point.3.connected.trianglepath.dotted" catalog="system" width="128" height="96"/>
+        <image name="point.3.filled.connected.trianglepath.dotted" catalog="system" width="128" height="96"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

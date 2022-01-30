@@ -26,9 +26,14 @@ class OthersTableViewCell: UITableViewCell {
    }
    
    func setup(itemName: String) {
-//      if let image = UIImage(named: imageName) {
-//         itemImageView.image = image
-//      }
+      switch itemName {
+      case "About":
+         itemImageView.image = UIImage(systemName: "lightbulb")
+      case "References":
+         itemImageView.image = UIImage(systemName: "book")
+      default:()
+      }
+
       itemLabel.text = itemName
    }
    

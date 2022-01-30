@@ -22,6 +22,7 @@ class CustomTabBarController: UITabBarController {
       } else {
          tabBar.backgroundColor = .clear
       }
+      tabBar.tintColor = .purple
    }
    
 }

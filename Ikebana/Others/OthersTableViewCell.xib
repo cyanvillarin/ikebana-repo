@@ -17,16 +17,16 @@
                 <rect key="frame" x="0.0" y="0.0" width="418" height="63"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YTQ-g2-ZKW">
-                        <rect key="frame" x="14" y="14" width="35" height="35"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YTQ-g2-ZKW">
+                        <rect key="frame" x="20" y="23" width="20" height="17.5"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="35" id="4fU-8F-7Fh"/>
-                            <constraint firstAttribute="width" constant="35" id="Ouf-ju-gyD"/>
+                            <constraint firstAttribute="height" constant="20" id="4fU-8F-7Fh"/>
+                            <constraint firstAttribute="width" constant="20" id="Ouf-ju-gyD"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8W-e8-UVZ">
-                        <rect key="frame" x="61" y="21" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="52" y="23.5" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -45,7 +45,7 @@
                     <constraint firstAttribute="bottom" secondItem="ewV-SU-DTb" secondAttribute="bottom" id="DSe-rd-7aM"/>
                     <constraint firstItem="a8W-e8-UVZ" firstAttribute="leading" secondItem="YTQ-g2-ZKW" secondAttribute="trailing" constant="12" id="H28-5R-nMu"/>
                     <constraint firstItem="YTQ-g2-ZKW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="q8e-5y-EZ6"/>
-                    <constraint firstItem="YTQ-g2-ZKW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="qra-91-lRV"/>
+                    <constraint firstItem="YTQ-g2-ZKW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="qra-91-lRV"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -57,6 +57,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="book" catalog="system" width="128" height="99"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

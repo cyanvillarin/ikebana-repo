@@ -70,6 +70,7 @@ extension MaterialsViewController: UITableViewDataSource {
       let cell = tableView.dequeueReusableCell(withIdentifier: "MaterialsTableViewCell", for: indexPath) as! MaterialsTableViewCell
       DispatchQueue.main.async {
          cell.setup(material: self.materials[indexPath.row])
+         cell.selectionStyle = .none
       }
       return cell
    }

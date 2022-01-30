@@ -10,8 +10,13 @@ import UIKit
 
 class AboutViewController: BaseViewController {
    
+   @IBOutlet var logoImageView: UIImageView!
+   
    override func viewDidLoad() {
       super.viewDidLoad()
       self.title = "About"
+      self.view.layoutIfNeeded()
+      logoImageView.layer.masksToBounds = true
+      logoImageView.layer.cornerRadius = 10.0
    }
 }

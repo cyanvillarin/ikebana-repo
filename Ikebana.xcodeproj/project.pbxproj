@@ -14,6 +14,7 @@
 		875D510C27A3CA59008DD172 /* ReferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875D510B27A3CA59008DD172 /* ReferencesViewController.swift */; };
 		875D510F27A3CBB2008DD172 /* ReferencesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875D510D27A3CBB2008DD172 /* ReferencesTableViewCell.swift */; };
 		875D511027A3CBB2008DD172 /* ReferencesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 875D510E27A3CBB2008DD172 /* ReferencesTableViewCell.xib */; };
+		876070A327A66C9700A5533D /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876070A227A66C9700A5533D /* UIImageViewExtensions.swift */; };
 		87787AD227A0C78C004CE508 /* OthersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87787AD127A0C78C004CE508 /* OthersViewController.swift */; };
 		87787AD427A0C79D004CE508 /* MaterialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87787AD327A0C79D004CE508 /* MaterialsViewController.swift */; };
 		87787AD627A0C7D7004CE508 /* StylesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87787AD527A0C7D7004CE508 /* StylesViewModel.swift */; };
@@ -42,6 +43,7 @@
 		875D510B27A3CA59008DD172 /* ReferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencesViewController.swift; sourceTree = "<group>"; };
 		875D510D27A3CBB2008DD172 /* ReferencesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencesTableViewCell.swift; sourceTree = "<group>"; };
 		875D510E27A3CBB2008DD172 /* ReferencesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReferencesTableViewCell.xib; sourceTree = "<group>"; };
+		876070A227A66C9700A5533D /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
 		87787AD127A0C78C004CE508 /* OthersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersViewController.swift; sourceTree = "<group>"; };
 		87787AD327A0C79D004CE508 /* MaterialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsViewController.swift; sourceTree = "<group>"; };
 		87787AD527A0C7D7004CE508 /* StylesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylesViewModel.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			children = (
 				87787ADB27A0C89E004CE508 /* CustomTabBarController.swift */,
 				87787ADD27A0C8DC004CE508 /* BaseViewController.swift */,
+				876070A227A66C9700A5533D /* UIImageViewExtensions.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				876070A327A66C9700A5533D /* UIImageViewExtensions.swift in Sources */,
 				87787AE627A0D598004CE508 /* Material.swift in Sources */,
 				87BB808727A01C7F00BA4514 /* StylesViewController.swift in Sources */,
 				87787ADA27A0C7EB004CE508 /* OthersViewModel.swift in Sources */,

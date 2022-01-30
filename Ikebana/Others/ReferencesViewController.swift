@@ -23,7 +23,7 @@ class ReferencesViewController: BaseViewController {
    override func viewDidLoad() {
       super.viewDidLoad()
       pattern = ""
-      self.title = "References"
+      super.tabBarController?.title = "References"
       tableView.delegate = self
       tableView.dataSource = self
       tableView.separatorStyle = .none
