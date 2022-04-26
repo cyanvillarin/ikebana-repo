@@ -37,6 +37,7 @@ class StylesViewController: BaseViewController {
    override func viewDidLoad() {
       super.viewDidLoad()
       backgroundImage.applyBlurEffect()
+      carousel.backgroundColor = .clear
    }
    
 }
@@ -58,6 +59,7 @@ extension StylesViewController: CircularCarouselDataSource {
             if let image = UIImage(named: imageName) {
                imageView.image = image
                imageView.clipsToBounds = true
+               imageView.contentMode = .scaleAspectFit
                imageView.backgroundColor = .clear
             }
          }
