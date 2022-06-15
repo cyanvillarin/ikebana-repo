@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wRP-gp-AgH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wRP-gp-AgH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.4"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -92,8 +93,8 @@
                                 <attributedString key="attributedText">
                                     <fragment content="MATERIALS">
                                         <attributes>
-                                            <color key="NSColor" red="0.92446932790173075" green="0.067131534602833387" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="35" name="Papyrus"/>
+                                            <color key="NSColor" red="0.52269696279267597" green="0.198720589209469" blue="0.81856151542278255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="35" name="Georgia"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -210,34 +211,58 @@
         <!--BirthdayViewController-->
         <scene sceneID="0bT-fs-Yef">
             <objects>
-                <viewController storyboardIdentifier="BirthdayViewController" title="BirthdayViewController" id="XQ9-b5-Obf" customClass="BirthdayViewController" customModule="Ikebana" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BirthdayViewController" title="BirthdayViewController" id="XQ9-b5-Obf" customClass="MessageViewController" customModule="Ikebana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qca-cR-VrH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZS8-pR-kBu">
-                                <rect key="frame" x="53.5" y="154.5" width="307" height="587"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="307" id="D3i-mr-cbs"/>
-                                    <constraint firstAttribute="height" constant="587" id="Dah-0w-jyW"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="お誕生日おめでとう、美帆！ I hope you enjoyed your special day &lt;3">
-                                        <attributes>
-                                            <color key="NSColor" red="0.58935639079605417" green="0.095124308227303639" blue="0.64670871002505526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="59"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message-bg-2" translatesAutoresizingMaskIntoConstraints="NO" id="3Q5-Uf-Eru">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="美帆💓" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZS8-pR-kBu">
+                                <rect key="frame" x="41" y="227" width="151" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".HiraKakuInterface-W3" family=".Hiragino Kaku Gothic Interface" pointSize="40"/>
+                                <color key="textColor" red="0.49003595113754272" green="0.25841715931892395" blue="0.75511199235916138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="今まで色々ありがとう！これからも宜しくね 😌" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQJ-zQ-lVZ">
+                                <rect key="frame" x="41" y="312" width="334" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".HiraKakuInterface-W3" family=".Hiragino Kaku Gothic Interface" pointSize="40"/>
+                                <color key="textColor" red="0.27747270464897156" green="0.57628935575485229" blue="0.16215866804122925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="大好きだよ💜" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShW-zR-eID">
+                                <rect key="frame" x="53" y="470" width="308" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".HiraKakuInterface-W3" family=".Hiragino Kaku Gothic Interface" pointSize="50"/>
+                                <color key="textColor" red="0.73962944746017456" green="0.1975325345993042" blue="0.18750104308128357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="さやん✨" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4j-8W-bNO">
+                                <rect key="frame" x="186" y="546" width="199" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".HiraKakuInterface-W3" family=".Hiragino Kaku Gothic Interface" pointSize="40"/>
+                                <color key="textColor" red="0.22252887487411499" green="0.41556233167648315" blue="0.58428508043289185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="2" height="2"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MgB-ae-BgM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ZS8-pR-kBu" firstAttribute="centerY" secondItem="Qca-cR-VrH" secondAttribute="centerY" id="Gg5-Gg-zxX"/>
-                            <constraint firstItem="ZS8-pR-kBu" firstAttribute="centerX" secondItem="Qca-cR-VrH" secondAttribute="centerX" id="s8V-XX-cB2"/>
+                            <constraint firstItem="3Q5-Uf-Eru" firstAttribute="leading" secondItem="MgB-ae-BgM" secondAttribute="leading" id="53g-hd-gyI"/>
+                            <constraint firstAttribute="bottom" secondItem="3Q5-Uf-Eru" secondAttribute="bottom" id="gAF-zn-YPq"/>
+                            <constraint firstItem="MgB-ae-BgM" firstAttribute="trailing" secondItem="3Q5-Uf-Eru" secondAttribute="trailing" id="glH-19-a9v"/>
+                            <constraint firstItem="3Q5-Uf-Eru" firstAttribute="top" secondItem="Qca-cR-VrH" secondAttribute="top" id="nZB-He-hlc"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -318,11 +343,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="circle.grid.hex" catalog="system" width="128" height="112"/>
-        <image name="circle.hexagongrid.fill" catalog="system" width="128" height="112"/>
+        <image name="circle.grid.hex" catalog="system" width="128" height="115"/>
+        <image name="circle.hexagongrid.fill" catalog="system" width="128" height="115"/>
         <image name="ikebana-logo" width="1024" height="1024"/>
-        <image name="leaf" catalog="system" width="128" height="109"/>
-        <image name="leaf.fill" catalog="system" width="128" height="106"/>
+        <image name="leaf" catalog="system" width="128" height="111"/>
+        <image name="leaf.fill" catalog="system" width="128" height="109"/>
+        <image name="message-bg-2" width="4032" height="2268"/>
         <image name="point.3.connected.trianglepath.dotted" catalog="system" width="128" height="96"/>
         <image name="point.3.filled.connected.trianglepath.dotted" catalog="system" width="128" height="96"/>
         <systemColor name="systemBackgroundColor">

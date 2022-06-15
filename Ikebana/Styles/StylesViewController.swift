@@ -107,6 +107,7 @@ extension StylesViewController: CircularCarouselDelegate {
       }
       if let styleLabel = styleNameLabel {
          styleLabel.text = styles[index].name
+         styleLabel.alpha = 0.6
       }
    }
    func carousel(_ carousel: CircularCarousel, spacingForOffset offset: CGFloat) -> CGFloat {

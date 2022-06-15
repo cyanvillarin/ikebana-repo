@@ -20,7 +20,7 @@ class BaseViewController: UIViewController {
       if #available(iOS 15, *) {
          let appearance = UINavigationBarAppearance()
          appearance.configureWithOpaqueBackground()
-         appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+         appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
          appearance.backgroundColor = .clear
          navigationController?.navigationBar.standardAppearance = appearance
          navigationController?.navigationBar.scrollEdgeAppearance = appearance

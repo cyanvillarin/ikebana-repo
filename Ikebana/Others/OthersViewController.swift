@@ -17,6 +17,7 @@ class OthersViewController: BaseViewController {
    
    override func viewDidLoad() {
       super.viewDidLoad()
+      self.tabBarController?.title = "afsaf"
       tableView.delegate = self
       tableView.dataSource = self
       tableView.separatorStyle = .none

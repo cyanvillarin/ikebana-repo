@@ -24,7 +24,7 @@
 		87787ADE27A0C8DC004CE508 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87787ADD27A0C8DC004CE508 /* BaseViewController.swift */; };
 		87787AE127A0CA8B004CE508 /* MaterialsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87787ADF27A0CA8B004CE508 /* MaterialsTableViewCell.swift */; };
 		87787AE227A0CA8B004CE508 /* MaterialsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87787AE027A0CA8B004CE508 /* MaterialsTableViewCell.xib */; };
-		87787AE427A0CD26004CE508 /* BirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87787AE327A0CD26004CE508 /* BirthdayViewController.swift */; };
+		87787AE427A0CD26004CE508 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87787AE327A0CD26004CE508 /* MessageViewController.swift */; };
 		87787AE627A0D598004CE508 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87787AE527A0D598004CE508 /* Material.swift */; };
 		87787AE827A0D5C9004CE508 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87787AE727A0D5C9004CE508 /* Style.swift */; };
 		87BB808327A01C7F00BA4514 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BB808227A01C7F00BA4514 /* AppDelegate.swift */; };
@@ -53,7 +53,7 @@
 		87787ADD27A0C8DC004CE508 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		87787ADF27A0CA8B004CE508 /* MaterialsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsTableViewCell.swift; sourceTree = "<group>"; };
 		87787AE027A0CA8B004CE508 /* MaterialsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaterialsTableViewCell.xib; sourceTree = "<group>"; };
-		87787AE327A0CD26004CE508 /* BirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayViewController.swift; sourceTree = "<group>"; };
+		87787AE327A0CD26004CE508 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		87787AE527A0D598004CE508 /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
 		87787AE727A0D5C9004CE508 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		87BB807F27A01C7F00BA4514 /* Ikebana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ikebana.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,7 +113,7 @@
 				875D510B27A3CA59008DD172 /* ReferencesViewController.swift */,
 				875D510D27A3CBB2008DD172 /* ReferencesTableViewCell.swift */,
 				875D510E27A3CBB2008DD172 /* ReferencesTableViewCell.xib */,
-				87787AE327A0CD26004CE508 /* BirthdayViewController.swift */,
+				87787AE327A0CD26004CE508 /* MessageViewController.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -308,7 +308,7 @@
 				87787AE827A0D5C9004CE508 /* Style.swift in Sources */,
 				875D510727A3C52D008DD172 /* OthersTableViewCell.swift in Sources */,
 				87787AD627A0C7D7004CE508 /* StylesViewModel.swift in Sources */,
-				87787AE427A0CD26004CE508 /* BirthdayViewController.swift in Sources */,
+				87787AE427A0CD26004CE508 /* MessageViewController.swift in Sources */,
 				87787AE127A0CA8B004CE508 /* MaterialsTableViewCell.swift in Sources */,
 				87787AD227A0C78C004CE508 /* OthersViewController.swift in Sources */,
 				87BB808327A01C7F00BA4514 /* AppDelegate.swift in Sources */,

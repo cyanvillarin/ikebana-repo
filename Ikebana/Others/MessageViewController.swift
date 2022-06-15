@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 import ConfettiView
-class BirthdayViewController: BaseViewController {
+class MessageViewController: BaseViewController {
    
    override func viewDidLoad() {
       super.viewDidLoad()

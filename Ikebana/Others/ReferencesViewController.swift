@@ -44,7 +44,7 @@ extension ReferencesViewController: UITableViewDelegate {
       }
       
       if pattern == "01111222" {
-         if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BirthdayViewController") as? BirthdayViewController,
+         if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BirthdayViewController") as? MessageViewController,
             let navigator = navigationController {
             navigator.pushViewController(vc, animated: true)
          }
