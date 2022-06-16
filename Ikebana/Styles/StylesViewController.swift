@@ -40,6 +40,10 @@ class StylesViewController: BaseViewController {
         carousel.backgroundColor = .clear
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .default
+    }
+    
 }
 
 extension StylesViewController: CircularCarouselDataSource {
