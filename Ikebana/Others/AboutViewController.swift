@@ -15,7 +15,7 @@ class AboutViewController: BaseViewController {
    override func viewDidLoad() {
       super.viewDidLoad()
       self.title = "About"
-      self.view.layoutIfNeeded()
+      
       logoImageView.layer.masksToBounds = true
       logoImageView.layer.cornerRadius = 10.0
    }

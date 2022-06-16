@@ -50,9 +50,9 @@ class MaterialsViewController: BaseViewController {
       tableView.separatorStyle = .none
       tableView.register(UINib(nibName: "MaterialsTableViewCell", bundle: nil), forCellReuseIdentifier: "MaterialsTableViewCell")
       
+       self.navigationController?.navigationBar.prefersLargeTitles = true
    }
-   
-   
+
 }
 
 extension MaterialsViewController: UITableViewDelegate {

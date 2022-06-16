@@ -36,7 +36,8 @@ class ReferencesViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        super.tabBarController?.title = "References"
+        
+        self.title = "References"
         
         // reset the stuff
         self.indexOfImageToUse = 0
