@@ -10,7 +10,6 @@ target 'Ikebana' do
   pod 'RxSwift'				           # for data binding viewModel
   pod 'RxCocoa'				           # for data binding view
   pod 'Kingfisher'			         # for image caching, loading
-  pod 'PKHUD'				             # for loading views
   pod 'CircularCarousel'	       # for the carousel
   pod 'ConfettiView-NSHipster'   # for the confetti view
 
