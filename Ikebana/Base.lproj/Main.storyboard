@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wRP-gp-AgH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wRP-gp-AgH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -208,63 +207,105 @@
             </objects>
             <point key="canvasLocation" x="1061" y="901"/>
         </scene>
-        <!--BirthdayViewController-->
+        <!--Message View Controller-->
         <scene sceneID="0bT-fs-Yef">
             <objects>
-                <viewController storyboardIdentifier="BirthdayViewController" title="BirthdayViewController" id="XQ9-b5-Obf" customClass="MessageViewController" customModule="Ikebana" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BirthdayViewController" id="XQ9-b5-Obf" customClass="MessageViewController" customModule="Ikebana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qca-cR-VrH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message-bg-2" translatesAutoresizingMaskIntoConstraints="NO" id="3Q5-Uf-Eru">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message-bg-1" translatesAutoresizingMaskIntoConstraints="NO" id="3Q5-Uf-Eru">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="美帆💓" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZS8-pR-kBu">
-                                <rect key="frame" x="41" y="227" width="151" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美帆💓" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZS8-pR-kBu">
+                                <rect key="frame" x="30" y="264" width="122" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="2B3-VI-mt1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name=".HiraKakuInterface-W3" family=".Hiragino Kaku Gothic Interface" pointSize="40"/>
                                 <color key="textColor" red="0.49003595113754272" green="0.25841715931892395" blue="0.75511199235916138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="今まで色々ありがとう！これからも宜しくね 😌" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQJ-zQ-lVZ">
-                                <rect key="frame" x="41" y="312" width="334" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今まで色々ありがとう！これからも宜しくね 😌" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LQJ-zQ-lVZ">
+                                <rect key="frame" x="40" y="337" width="334" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="usT-hY-V6R"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name=".HiraKakuInterface-W3" family=".Hiragino Kaku Gothic Interface" pointSize="40"/>
                                 <color key="textColor" red="0.27747270464897156" green="0.57628935575485229" blue="0.16215866804122925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="大好きだよ💜" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShW-zR-eID">
-                                <rect key="frame" x="53" y="470" width="308" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大好きだよ💜" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="ShW-zR-eID">
+                                <rect key="frame" x="40" y="495" width="334" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Bcw-hO-Q72"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name=".HiraKakuInterface-W3" family=".Hiragino Kaku Gothic Interface" pointSize="50"/>
                                 <color key="textColor" red="0.73962944746017456" green="0.1975325345993042" blue="0.18750104308128357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="さやん✨" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4j-8W-bNO">
-                                <rect key="frame" x="186" y="546" width="199" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="さやん✨" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4j-8W-bNO">
+                                <rect key="frame" x="222" y="577" width="162" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="7kJ-tt-ctO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name=".HiraKakuInterface-W3" family=".Hiragino Kaku Gothic Interface" pointSize="40"/>
                                 <color key="textColor" red="0.22252887487411499" green="0.41556233167648315" blue="0.58428508043289185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VtA-ZQ-alW">
+                                <rect key="frame" x="0.0" y="44" width="414" height="220"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L10-xy-Ent">
+                                <rect key="frame" x="0.0" y="642" width="414" height="220"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MgB-ae-BgM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="MgB-ae-BgM" firstAttribute="trailing" secondItem="ShW-zR-eID" secondAttribute="trailing" constant="40" id="0KI-T4-Tgg"/>
+                            <constraint firstItem="LQJ-zQ-lVZ" firstAttribute="top" secondItem="ZS8-pR-kBu" secondAttribute="bottom" constant="8" symbolic="YES" id="2wu-af-DSQ"/>
+                            <constraint firstItem="L10-xy-Ent" firstAttribute="height" secondItem="VtA-ZQ-alW" secondAttribute="height" id="3X0-aA-bcB"/>
+                            <constraint firstItem="VtA-ZQ-alW" firstAttribute="leading" secondItem="MgB-ae-BgM" secondAttribute="leading" id="3Yg-7y-N5t"/>
+                            <constraint firstItem="MgB-ae-BgM" firstAttribute="trailing" secondItem="VtA-ZQ-alW" secondAttribute="trailing" id="4he-CA-BA4"/>
                             <constraint firstItem="3Q5-Uf-Eru" firstAttribute="leading" secondItem="MgB-ae-BgM" secondAttribute="leading" id="53g-hd-gyI"/>
+                            <constraint firstItem="MgB-ae-BgM" firstAttribute="bottom" secondItem="L10-xy-Ent" secondAttribute="bottom" id="7a1-gt-JMe"/>
+                            <constraint firstItem="ZS8-pR-kBu" firstAttribute="top" secondItem="VtA-ZQ-alW" secondAttribute="bottom" id="D30-HQ-riw"/>
+                            <constraint firstItem="ShW-zR-eID" firstAttribute="top" secondItem="LQJ-zQ-lVZ" secondAttribute="bottom" constant="8" symbolic="YES" id="H8j-48-9T5"/>
+                            <constraint firstItem="MgB-ae-BgM" firstAttribute="trailing" secondItem="L10-xy-Ent" secondAttribute="trailing" id="Lkw-u7-jUf"/>
+                            <constraint firstItem="ShW-zR-eID" firstAttribute="leading" secondItem="MgB-ae-BgM" secondAttribute="leading" constant="40" id="RB0-k1-VGI"/>
+                            <constraint firstItem="VtA-ZQ-alW" firstAttribute="top" secondItem="MgB-ae-BgM" secondAttribute="top" id="Ulk-av-gUB"/>
+                            <constraint firstItem="LQJ-zQ-lVZ" firstAttribute="leading" secondItem="MgB-ae-BgM" secondAttribute="leading" constant="40" id="Yfc-9P-c7d"/>
+                            <constraint firstItem="MgB-ae-BgM" firstAttribute="trailing" secondItem="LQJ-zQ-lVZ" secondAttribute="trailing" constant="40" id="bAR-ce-35L"/>
                             <constraint firstAttribute="bottom" secondItem="3Q5-Uf-Eru" secondAttribute="bottom" id="gAF-zn-YPq"/>
                             <constraint firstItem="MgB-ae-BgM" firstAttribute="trailing" secondItem="3Q5-Uf-Eru" secondAttribute="trailing" id="glH-19-a9v"/>
+                            <constraint firstItem="L10-xy-Ent" firstAttribute="top" secondItem="w4j-8W-bNO" secondAttribute="bottom" id="kb1-J4-Jzw"/>
+                            <constraint firstItem="MgB-ae-BgM" firstAttribute="trailing" secondItem="w4j-8W-bNO" secondAttribute="trailing" constant="30" id="n0t-xk-M5P"/>
                             <constraint firstItem="3Q5-Uf-Eru" firstAttribute="top" secondItem="Qca-cR-VrH" secondAttribute="top" id="nZB-He-hlc"/>
+                            <constraint firstItem="L10-xy-Ent" firstAttribute="leading" secondItem="MgB-ae-BgM" secondAttribute="leading" id="rB9-PE-EZj"/>
+                            <constraint firstItem="ZS8-pR-kBu" firstAttribute="leading" secondItem="MgB-ae-BgM" secondAttribute="leading" constant="30" id="vuD-wQ-7ZG"/>
+                            <constraint firstItem="w4j-8W-bNO" firstAttribute="top" secondItem="ShW-zR-eID" secondAttribute="bottom" constant="17" id="z2O-dX-X1x"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="bgImage" destination="3Q5-Uf-Eru" id="lxI-fD-j9r"/>
+                        <outlet property="fromLabel" destination="w4j-8W-bNO" id="gw6-Ce-rjA"/>
+                        <outlet property="loveYouLabel" destination="ShW-zR-eID" id="omz-17-uva"/>
+                        <outlet property="messageLabel" destination="LQJ-zQ-lVZ" id="50P-f0-031"/>
+                        <outlet property="toLabel" destination="ZS8-pR-kBu" id="j7h-wD-GaS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oL0-uH-fHC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -278,7 +319,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gap-Jw-La2">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gap-Jw-La2">
                                 <rect key="frame" x="40" y="354" width="334" height="101.5"/>
                                 <string key="text">This app was developed for those who love the art of Ikebana. I hope this would bring joy to people who practice Ikebana, and will serve as a reference for those who have just started practicing Ikebana :)</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -311,10 +352,10 @@
             </objects>
             <point key="canvasLocation" x="782.60869565217399" y="1601.7857142857142"/>
         </scene>
-        <!--ReferencesViewController-->
+        <!--References-->
         <scene sceneID="wcW-x9-xP8">
             <objects>
-                <viewController storyboardIdentifier="ReferencesViewController" title="ReferencesViewController" id="wK5-hd-xBV" customClass="ReferencesViewController" customModule="Ikebana" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReferencesViewController" title="References" id="wK5-hd-xBV" customClass="ReferencesViewController" customModule="Ikebana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2tQ-RM-Zz9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -343,12 +384,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="circle.grid.hex" catalog="system" width="128" height="115"/>
-        <image name="circle.hexagongrid.fill" catalog="system" width="128" height="115"/>
+        <image name="circle.grid.hex" catalog="system" width="128" height="112"/>
+        <image name="circle.hexagongrid.fill" catalog="system" width="128" height="112"/>
         <image name="ikebana-logo" width="1024" height="1024"/>
-        <image name="leaf" catalog="system" width="128" height="111"/>
-        <image name="leaf.fill" catalog="system" width="128" height="109"/>
-        <image name="message-bg-2" width="4032" height="2268"/>
+        <image name="leaf" catalog="system" width="128" height="109"/>
+        <image name="leaf.fill" catalog="system" width="128" height="106"/>
+        <image name="message-bg-1" width="4032" height="2268"/>
         <image name="point.3.connected.trianglepath.dotted" catalog="system" width="128" height="96"/>
         <image name="point.3.filled.connected.trianglepath.dotted" catalog="system" width="128" height="96"/>
         <systemColor name="systemBackgroundColor">
