@@ -11,6 +11,8 @@ import SwiftUI
 
 class MaterialsViewController: BaseViewController {
    
+   let adUnitId = "ca-app-pub-8855918227783661/1322009664"
+   
    @IBOutlet var tableView: UITableView!
    
    let cellHeight: CGFloat = 87.0
