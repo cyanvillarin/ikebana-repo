@@ -12,5 +12,6 @@ target 'Ikebana' do
   pod 'Kingfisher'			         # for image caching, loading
   pod 'CircularCarousel'	       # for the carousel
   pod 'ConfettiView-NSHipster'   # for the confetti view
+  pod 'Google-Mobile-Ads-SDK'    # for the Ads
 
 end
