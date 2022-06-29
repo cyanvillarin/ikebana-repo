@@ -8,6 +8,8 @@
 import Foundation
 
 struct Style: Decodable {
+   var id: String?
    var name: String?
    var imageName: String?
+   var description: String?
 }
