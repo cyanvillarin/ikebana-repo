@@ -62,6 +62,7 @@ extension MaterialsViewController: UITableViewDelegate {
         if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MaterialsDetailViewController") as? MaterialsDetailViewController,
            let navigator = navigationController {
             self.navigationController?.navigationBar.prefersLargeTitles = false
+            vc.material = materials[indexPath.row]
             navigator.pushViewController(vc, animated: true)
         }
     }
