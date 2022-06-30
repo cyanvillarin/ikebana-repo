@@ -111,6 +111,7 @@ extension StylesViewController: CircularCarouselDelegate {
     
     func carousel(_ carousel: CircularCarousel, didSelectItemAtIndex index: Int) {
         if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "StylesDetailViewController") as? StylesDetailViewController {
+            vc.style = styles[index]
             self.present(vc, animated: true)
         }
     }

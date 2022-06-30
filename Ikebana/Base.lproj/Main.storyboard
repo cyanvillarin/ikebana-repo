@@ -164,6 +164,11 @@
                             <constraint firstItem="WGn-A7-5bq" firstAttribute="trailing" secondItem="IwN-qw-KnD" secondAttribute="trailing" constant="20" id="nr7-La-lab"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="styleDescription" destination="IwN-qw-KnD" id="AUW-cO-h4i"/>
+                        <outlet property="styleImage" destination="nkR-LK-zlo" id="GBJ-1j-LTN"/>
+                        <outlet property="styleNameLabel" destination="hqc-oH-Ran" id="d6K-Uy-i4a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zzg-xL-vgM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
