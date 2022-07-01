@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -43,15 +44,30 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxw-rd-ahg">
+                        <rect key="frame" x="303" y="31" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="HZC-Ae-izW"/>
+                            <constraint firstAttribute="width" constant="25" id="K1a-pE-uNO"/>
+                        </constraints>
+                        <color key="tintColor" systemColor="systemRedColor"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system"/>
+                        <connections>
+                            <action selector="didTapFavoriteButton" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BDg-xe-9m3"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="dJw-S1-zFr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="COy-CA-5C8"/>
                     <constraint firstItem="KMn-Lq-6z1" firstAttribute="leading" secondItem="UVq-Ic-1pV" secondAttribute="trailing" constant="13" id="FZe-Uy-eUs"/>
+                    <constraint firstAttribute="trailing" secondItem="kxw-rd-ahg" secondAttribute="trailing" constant="20" id="L1a-Mf-gp5"/>
                     <constraint firstItem="biX-wO-wTV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="10" id="Pev-So-vhh"/>
                     <constraint firstItem="UVq-Ic-1pV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Vyz-he-xra"/>
                     <constraint firstItem="biX-wO-wTV" firstAttribute="leading" secondItem="UVq-Ic-1pV" secondAttribute="trailing" constant="13" id="a1p-1i-xgl"/>
                     <constraint firstAttribute="bottom" secondItem="dJw-S1-zFr" secondAttribute="bottom" id="cAM-Aq-kvR"/>
                     <constraint firstItem="KMn-Lq-6z1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-10" id="eaJ-xd-70P"/>
+                    <constraint firstItem="kxw-rd-ahg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nD0-DF-Hfl"/>
                     <constraint firstItem="UVq-Ic-1pV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="pAC-SD-r8h"/>
                     <constraint firstAttribute="trailing" secondItem="dJw-S1-zFr" secondAttribute="trailing" constant="15" id="rKA-JJ-EDb"/>
                 </constraints>
@@ -59,6 +75,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="englishNameLabel" destination="biX-wO-wTV" id="WWP-vW-suc"/>
+                <outlet property="favoriteButton" destination="kxw-rd-ahg" id="HaN-wu-bzY"/>
                 <outlet property="japaneseNameLabel" destination="KMn-Lq-6z1" id="iWR-Lb-n4J"/>
                 <outlet property="materialImageView" destination="UVq-Ic-1pV" id="umh-UG-gRR"/>
             </connections>
@@ -66,11 +83,15 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

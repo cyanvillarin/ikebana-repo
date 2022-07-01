@@ -18,26 +18,26 @@ class MaterialsViewController: BaseViewController {
     let cellHeight: CGFloat = 87.0
     
     let materials: [Material] = [
-        Material(japaneseName: "Take 竹", englishName: "Bamboo", imageName: "take"),
-        Material(japaneseName: "Sasa 笹", englishName: "Bamboo Grass", imageName: "sasa"),
-        Material(japaneseName: "Tsuru Ume Modoki 鶴梅擬", englishName: "Bittersweet", imageName: "tsuruumemodoki"),
-        Material(japaneseName: "Tsubaki 椿", englishName: "Camellia", imageName: "tsubaki"),
-        Material(japaneseName: "Senryo 千両", englishName: "Ardisia", imageName: "senryo"),
-        Material(japaneseName: "Kiku 菊", englishName: "Chrysamthemum", imageName: "kiku"),
-        Material(japaneseName: "Shaga 著莪", englishName: "Iris", imageName: "shobu"),
-        Material(japaneseName: "Mikan みかん", englishName: "Orang", imageName: "mikan"),
-        Material(japaneseName: "Ume 梅", englishName: "Plum / Apricot", imageName: "ume"),
-        Material(japaneseName: "Boke 木瓜", englishName: "Quince", imageName: "boke"),
-        Material(japaneseName: "Nanten 南天", englishName: "Nandina / Nandida", imageName: "nanten"),
-        Material(japaneseName: "Suisen 水仙", englishName: "Narcissus", imageName: "suisen"),
-        Material(japaneseName: "Momo 桃", englishName: "Peach", imageName: "momo"),
-        Material(japaneseName: "Matsu 松", englishName: "Pine Tree", imageName: "matsu"),
-        Material(japaneseName: "Omoto 万年青", englishName: "Rohdea", imageName: "omoto"),
-        Material(japaneseName: "Kanchiku 寒竹", englishName: "Non-hollow Bamboo", imageName: "kanchiku"),
-        Material(japaneseName: "Botan 牡丹", englishName: "Tree Peony", imageName: "botan"),
-        Material(japaneseName: "Shidare Yanagi 枝垂れ柳", englishName: "Weeping Willow", imageName: "shidareyanagi"),
-        Material(japaneseName: "Ume Modoki 梅擬", englishName: "Winterberry", imageName: "umemodoki"),
-        Material(japaneseName: "Roubai 蝋梅", englishName: "Wintersweet", imageName: "roubai")
+        Material(japaneseName: "Take 竹", englishName: "Bamboo", id: "take"),
+        Material(japaneseName: "Sasa 笹", englishName: "Bamboo Grass", id: "sasa"),
+        Material(japaneseName: "Tsuru Ume Modoki 鶴梅擬", englishName: "Bittersweet", id: "tsuruumemodoki"),
+        Material(japaneseName: "Tsubaki 椿", englishName: "Camellia", id: "tsubaki"),
+        Material(japaneseName: "Senryo 千両", englishName: "Ardisia", id: "senryo"),
+        Material(japaneseName: "Kiku 菊", englishName: "Chrysamthemum", id: "kiku"),
+        Material(japaneseName: "Shaga 著莪", englishName: "Iris", id: "shobu"),
+        Material(japaneseName: "Mikan みかん", englishName: "Orang", id: "mikan"),
+        Material(japaneseName: "Ume 梅", englishName: "Plum / Apricot", id: "ume"),
+        Material(japaneseName: "Boke 木瓜", englishName: "Quince", id: "boke"),
+        Material(japaneseName: "Nanten 南天", englishName: "Nandina / Nandida", id: "nanten"),
+        Material(japaneseName: "Suisen 水仙", englishName: "Narcissus", id: "suisen"),
+        Material(japaneseName: "Momo 桃", englishName: "Peach", id: "momo"),
+        Material(japaneseName: "Matsu 松", englishName: "Pine Tree", id: "matsu"),
+        Material(japaneseName: "Omoto 万年青", englishName: "Rohdea", id: "omoto"),
+        Material(japaneseName: "Kanchiku 寒竹", englishName: "Non-hollow Bamboo", id: "kanchiku"),
+        Material(japaneseName: "Botan 牡丹", englishName: "Tree Peony", id: "botan"),
+        Material(japaneseName: "Shidare Yanagi 枝垂れ柳", englishName: "Weeping Willow", id: "shidareyanagi"),
+        Material(japaneseName: "Ume Modoki 梅擬", englishName: "Winterberry", id: "umemodoki"),
+        Material(japaneseName: "Roubai 蝋梅", englishName: "Wintersweet", id: "roubai")
     ]
     
     let imageNames = [""]
