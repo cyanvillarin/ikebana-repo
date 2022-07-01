@@ -336,7 +336,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYl-sd-5qD">
                                 <rect key="frame" x="20" y="607" width="335" height="40"/>
-                                <color key="backgroundColor" red="0.68605107070000004" green="0.49737191200000003" blue="0.90257948639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.33725490196078434" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="e6W-4C-TFe"/>
                                 </constraints>

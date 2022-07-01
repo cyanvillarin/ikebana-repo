@@ -29,10 +29,33 @@ class MaterialsDetailViewController: UIViewController {
         
         materialEnglishName.text = material.englishName
         
+        setupFavoritesButton()
+        
+    }
+    
+    func setupFavoritesButton() {
+        if material.isFavorited {
+            favoriteButton.setTitle("Remove from Favorites", for: .normal)
+            favoriteButton.backgroundColor = UIColor(hexString: "FF564B")
+        } else {
+            favoriteButton.setTitle("Add to Favorites", for: .normal)
+            favoriteButton.backgroundColor = UIColor(hexString: "AF7FE6")
+        }
     }
     
     @IBAction func didTapFavoriteButton() {
-        print("Im tapped")
+        if material.isFavorited {
+            // set it to unfavorited
+            material.isFavorited = false
+        } else {
+            // set it to favorited
+            material.isFavorited = true
+        }
+        
+        if let id = material.id {
+            UserDefaults.standard.set(material.isFavorited, forKey: "isFavorited_\(id)")
+        }
+        setupFavoritesButton()
     }
     
 }

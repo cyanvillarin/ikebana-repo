@@ -55,6 +55,11 @@ class MaterialsViewController: BaseViewController {
         self.navigationController?.navigationBar.prefersLargeTitles = true
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.updateFavorites()
+        self.tableView.reloadData()
+    }
+    
     func updateFavorites() {
         for material in materials {
             if let materialId = material.id {
