@@ -66,7 +66,12 @@ class MaterialsTableViewCell: UITableViewCell {
             favoriteButton.setImage(UIImage(systemName: "heart"), for: .normal)
             
             // set it to not favorited in UserDefaults as well
+            if let id = self.material.id {
+                UserDefaults.standard.set(false, forKey: "isFavorited_\(id)")
+            }
+            
             // set it to not favorited in self.material
+            self.material.isFavorited = false
             
         } else {
             
@@ -74,7 +79,12 @@ class MaterialsTableViewCell: UITableViewCell {
             favoriteButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
             
             // set it to favorited in UserDefaults as well
+            if let id = self.material.id {
+                UserDefaults.standard.set(true, forKey: "isFavorited_\(id)")
+            }
+            
             // set it to favorited in self.material
+            self.material.isFavorited = true
             
         }
         

@@ -17,7 +17,7 @@ class MaterialsViewController: BaseViewController {
     
     let cellHeight: CGFloat = 87.0
     
-    let materials: [Material] = [
+    var materials: [Material] = [
         Material(japaneseName: "Take 竹", englishName: "Bamboo", id: "take"),
         Material(japaneseName: "Sasa 笹", englishName: "Bamboo Grass", id: "sasa"),
         Material(japaneseName: "Tsuru Ume Modoki 鶴梅擬", englishName: "Bittersweet", id: "tsuruumemodoki"),
@@ -53,6 +53,17 @@ class MaterialsViewController: BaseViewController {
         tableView.register(UINib(nibName: "MaterialsTableViewCell", bundle: nil), forCellReuseIdentifier: "MaterialsTableViewCell")
         
         self.navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
+    func updateFavorites() {
+        for material in materials {
+            if let materialId = material.id {
+                let isFavorited = UserDefaults.standard.bool(forKey: "isFavorited_\(materialId)")
+                if isFavorited {
+                    material.isFavorited = true
+                }
+            }
+        }
     }
     
 }

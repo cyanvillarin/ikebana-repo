@@ -8,10 +8,10 @@
 import Foundation
 
 class Material {
-    var id: String?
-    var japaneseName: String?
-    var englishName: String?
-    var imageName: String?
+    var id: String!
+    var japaneseName: String!
+    var englishName: String!
+    var imageName: String!
     var isFavorited: Bool!
     
     init(japaneseName: String, englishName: String, id: String, isFavorited: Bool = false) {
